@@ -26,6 +26,18 @@
     title="AAIX Uniform Inventory"
     allow="clipboard-write"
   ></iframe>
+  <script>
+    const TOKEN_KEY='aaix_uniform_token';
+    window.addEventListener('message',event=>{
+      const fromGoogle=event.origin==='https://script.google.com'||event.origin.endsWith('.googleusercontent.com');
+      if(!fromGoogle||!event.data)return;
+      if(event.data.type==='aaix-token-request'){
+        event.source.postMessage({type:'aaix-token-response',token:localStorage.getItem(TOKEN_KEY)||''},event.origin);
+      }else if(event.data.type==='aaix-token-save'){
+        event.data.token?localStorage.setItem(TOKEN_KEY,event.data.token):localStorage.removeItem(TOKEN_KEY);
+      }
+    });
+  </script>
   <noscript class="fallback">
     <a href="https://script.google.com/macros/s/AKfycbzdMMYavvMVwx5YU1iQRA7BKZ9W_Yab2RwnYeeRoiX97ihaevdcipSsx4jXq8ei4cvv/exec">Open AAIX Uniform Inventory</a>
   </noscript>
