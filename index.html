@@ -2,29 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#1f9aaa">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="AAIX Uniforms">
   <meta name="application-name" content="AAIX Uniforms">
-  <meta http-equiv="refresh" content="0;url=https://script.google.com/macros/s/AKfycbzdMMYavvMVwx5YU1iQRA7BKZ9W_Yab2RwnYeeRoiX97ihaevdcipSsx4jXq8ei4cvv/exec">
   <link rel="icon" type="image/png" sizes="512x512" href="aaix-uniform-logo.png">
+  <link rel="shortcut icon" type="image/png" href="aaix-uniform-logo.png">
   <link rel="apple-touch-icon" href="aaix-uniform-logo.png">
   <link rel="manifest" href="manifest.webmanifest">
   <title>AAIX Uniform Inventory</title>
   <style>
-    body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f4f7fa;font-family:Arial,sans-serif;color:#173f5f}
-    main{text-align:center;padding:28px}
-    .logo{width:144px;height:144px;border-radius:30px;box-shadow:0 12px 28px rgba(16,41,72,.15)}
-    a{display:inline-block;margin-top:15px;padding:12px 18px;border-radius:9px;background:#173f5f;color:white;text-decoration:none;font-weight:700}
+    html,body{width:100%;height:100%;margin:0;overflow:hidden;background:#f4f7fa}
+    iframe{display:block;width:100%;height:100%;border:0;background:#f4f7fa}
+    .fallback{position:fixed;inset:auto 16px 16px;z-index:2;text-align:center;font:14px Arial,sans-serif}
+    .fallback a{color:#173f5f}
   </style>
-  <script>window.location.replace("https://script.google.com/macros/s/AKfycbzdMMYavvMVwx5YU1iQRA7BKZ9W_Yab2RwnYeeRoiX97ihaevdcipSsx4jXq8ei4cvv/exec");</script>
 </head>
 <body>
-  <main>
-    <img class="logo" src="aaix-uniform-logo.png" alt="AAIX Uniforms">
-    <h1>AAIX Uniform Inventory</h1>
-    <p>Opening the application…</p>
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbzdMMYavvMVwx5YU1iQRA7BKZ9W_Yab2RwnYeeRoiX97ihaevdcipSsx4jXq8ei4cvv/exec"
+    title="AAIX Uniform Inventory"
+    allow="clipboard-write"
+  ></iframe>
+  <noscript class="fallback">
     <a href="https://script.google.com/macros/s/AKfycbzdMMYavvMVwx5YU1iQRA7BKZ9W_Yab2RwnYeeRoiX97ihaevdcipSsx4jXq8ei4cvv/exec">Open AAIX Uniform Inventory</a>
-  </main>
+  </noscript>
 </body>
 </html>
